@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  min-height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-wrapper {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #aaa;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  margin-left: 1rem;
+  font-weight: 700;
+  height: 5rem;
+  overflow: hidden;
+}
+
+.slider-text {
+  height: 4.7rem;
+  padding: 0.7rem;
+  margin-bottom: 1.65rem;
+  background-color: rgba(0, 132, 255, 0.63);
+  text-align: center;
+  border-radius: 1rem;
+  color: white;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: none;
+}
+
+.slider-text:first-child {
+  animation: slide 5s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    margin-top: 100px;
+    outline: 10px solid rgb(253, 253, 253);
+  }
+5%{
+  margin-top: 0;
+}
+
+25%{
+  margin-top: 0px;
+}
+33%{
+  margin-top: -100px;
+}
+50%{
+  margin-top: -100px;
+}
+58%{
+  margin-top: -200px;
+}
+75%{
+  margin-top: -200px;
+}
+83%{
+  margin-top: -300px;
+}
+100%{
+  margin-top: -300px;
+}
+}
